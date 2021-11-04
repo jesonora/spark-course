@@ -5,14 +5,13 @@ volumes:
     driver: local
 services:
   jupyter:
-    image: jupyter/pyspark-notebook:latest
+    image: jupyter:1.0.0
     container_name: jupyter
     ports:
-      - "8889:8888"
+      - "8888:8888"
       - "4040:4040"
     volumes:
       - shared-workspace:/opt/workspace
-    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
   spark-master:
     image: spark-master:1.0.0
     container_name: spark-master

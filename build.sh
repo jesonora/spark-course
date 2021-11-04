@@ -1,7 +1,7 @@
 # -- Software Stack Version
 
 SPARK_VERSION="3.1.2"
-HADOOP_VERSION="2.7"
+HADOOP_VERSION="3.2"
 JUPYTER_VERSION="1.0.0"
 
 echo ${SPARK_VERSION}
@@ -27,3 +27,9 @@ docker build \
 docker build \
   -f conf/spark-worker.Dockerfile \
   -t spark-worker:1.0.0 .
+
+docker build \
+  --build-arg spark_version="${SPARK_VERSION}" \
+  --build-arg jupyter_version="${JUPYTER_VERSION}" \
+  -f conf/jupyter.Dockerfile \
+  -t jupyter:1.0.0 .
