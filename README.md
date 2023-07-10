@@ -8,3 +8,4 @@
 ```shell
 sh build.sh
 ```
+4. Go to local **http://localhost:8888/tree?**
