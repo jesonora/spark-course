@@ -1,16 +1,21 @@
-# spark-course
+# Spark Infra Playground
 
-## Run
+## Docker Overview
+![docker](img/docker-overview.png)
+
+## Architecture
+![architecture](img/infra.png)
+
+## Run Infra
+
+### Requirements
+- [ ] Docker installed
 
 1. Open the folder with **Visual Studio Code**
-2. Open the file **build.sh** and in the botton right, change **CRLF** by **LF**
-3. Open a terminal
-```shell
-sh build.sh
-```
-4. Run
-```
-docker-compose up
-```
-5. Go to local **http://localhost:8888/tree?**
-6. Clone the repo **https://github.com/jesonora/spark-course-notebooks**
+2. (if windows) Open the file **build.sh** and in the botton right, change **CRLF** by **LF**, then with `git bash` run shell script.
+4. Open a terminal (if windows use Gitbash instead)
+    ```shell
+    sh build.sh
+    ```
+5. Run `docker-compose up`
+6. Go to local [Jupyerlab](http://localhost:8890/lab)
