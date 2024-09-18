@@ -10,6 +10,7 @@
 
 ### Requirements
 - [ ] Docker installed
+- [ ] Git Installed
 
 1. Open the folder with **Visual Studio Code**
 2. (if windows) Open the file **build.sh** and in the botton right, change **CRLF** by **LF**, then with `git bash` run shell script.
