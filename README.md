@@ -20,3 +20,4 @@
     ```
 5. Run `docker-compose up`
 6. Go to local [Jupyerlab](http://localhost:8890/lab)
+7. Clone the repository `https://github.com/jesonora/spark-course-notebooks`
